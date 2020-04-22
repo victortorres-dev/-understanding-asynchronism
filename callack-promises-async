@@ -1,0 +1,28 @@
+Callbacks:
+    -Son universales (corren en cualquier navegador; antiguo o moderno)
+    -Desventaja,; su composición, la estructura de anidación marcando una 
+    complejidad en la lectura del codigo que lleva al concepto de callback hell. Flujo poco intuitivo, no permite el manejo de excepciones
+
+Promesas: 
+    -Facilmente enlazable (then enlazado con un return), lectura intuitiva, permite la capacidad de trabajo con asincronismo
+    -Desventaja, no maneja excepciones, los errores se capturan en el cash, propenso a errores si no se retorna el siguiente llamado
+    requiere de un polifile para funcionar en todos los navegadores; es decir, es necesario transpilar el codigo con una herramienta 
+    como babel para funcionar en todos los navegadores, antiguos y modernos
+
+Async-await:
+    -permite el uso de try {} catch {}, más fácil de leer.
+    -Tiene que esperar a completar cada llamado
+    -También requiere de un polyfile
+
+Es importante optimizar los recursos, utilizando las promesas y evitar caer en un callackhell
+
+¿Las promesas resuelven un principal problema de las callbacks?
+callback hell
+
+¿La recomendación de la comunidad para anidar callbacks es?
+
+¿Para qué nos sirve xhttp.status === 200?
+
+¿Para qué utilizamos `JSON.parse(xhttp.responseText)`?
+
+¿El estado 4 de xhttp.readyState hace referencia?

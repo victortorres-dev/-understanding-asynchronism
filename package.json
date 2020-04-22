@@ -4,7 +4,12 @@
   "description": "working asynchronism in js",
   "main": "src/index.js",
   "scripts": {
-    "runCallback": "node src/callback/index.js"
+    "callback": "node src/callback/index.js",
+    "callbackApi": "node src/callback/consumeApi.js",
+    "promise": "node src/promise/index.js",
+    "promiseApi": "node src/promise/promiseToConsumeApi.js",
+    "async": "node src/async/index.js",
+    "asyncApi": "node src/async/consumeApi.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +28,8 @@
   "homepage": "https://github.com/victortorres-dev/understanding-asynchronism#readme",
   "devDependencies": {
     "standard": "^14.3.3"
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
   }
 }
